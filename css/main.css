@@ -1,0 +1,157 @@
+body {
+	font-family: arial;
+	background-color: #e2f3ff;
+	margin: 0px;
+}
+
+.header-wrapper {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+header {
+	padding: 6pt;
+	color: white;
+	background-color: #000066;
+	clear: left;
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu {
+	overflow: auto;
+	background-color: #555;
+}
+
+ul.bottommenu {
+	overflow: auto;
+	position: fixed;
+    bottom: 0;
+    width:100%;
+	background-color: #e2f3ff;
+	z-index: 2;
+}
+
+nav {
+	position: fixed;
+	margin-top: 74pt;
+	width: 20%;
+	height: 100%;
+	overflow: auto;
+	background-color: #ceeaff;
+}
+
+li {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+ul.menu li {
+	float: left;
+	display: inline;
+	text-align: center;
+    padding: 14px 16px;
+	color: white;
+}
+
+ul.menu li:hover:not(.active) {
+	background-color: #f1f1f1;
+	color: black;
+}
+
+nav li {
+	display: block;
+	padding: 8px 16px;
+}
+
+nav li.active {
+	background-color: #0066cc;
+	color: white;
+}
+
+nav li:hover:not(.active) {
+	background-color: #0080ff;
+	color: white;
+}
+
+input[type=text] {
+	margin: 4px 0px;
+}
+
+input[type=text], textarea {
+	font-size: 10pt;
+}
+
+input[type=button] {
+	background-color: #0066cc;
+	color: white;
+	margin: 4px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+input[type=button]:hover {
+	background-color: #004d99;
+}
+
+label {
+	display: inline-block;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 180px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 5px;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	top: 105%;
+	left: 15px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+textarea {
+	margin: 4px 0px;
+	vertical-align: top;
+	border: 0.1px solid #cccccc;
+}
+
+.error {
+	padding-left: 8px;
+	color: red;
+}
+
+article {
+	display: inline-block;
+	margin-top: 74pt;
+	margin-bottom: 28pt;
+	margin-left: 20%;
+	padding: 1px 16px;
+	overflow: auto;
+}

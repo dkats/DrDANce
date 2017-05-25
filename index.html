@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CASED Cards</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="author" content="Daniel J. Kats">
+</head>
+<body>
+
+<div class="header-wrapper">
+<header>CASED Cards</header>
+
+<ul class="menu">
+	<li onclick="example();">Example card</li>
+	<li onclick="if(confirm('Are you sure you want to clear all data?')){window.location.reload();}">Reset</li>
+	<li onclick="document.getElementById('loadfile').click()">Load</li><input type="file" id="loadfile" onchange="load();" style="display:none;">
+	<li onclick="alert('Save this text file to your computer.');save();">Save</li>
+	<li onclick="updateDrug();window.open('print.html');">Print</li>
+	<li style="float:right;" onclick="window.open('https://github.com/dkats/CASEDCards');">Source code</li>
+	<li style="float:right;" onclick="window.open('mailto:djk175@case.edu?subject=CASEDcards bug! Ew!');">Report bug</li>
+	<li style="float:right;" onclick="window.open('mailto:djk175@case.edu?subject=CASEDcards question');">Contact</li>
+	<li style="float:right;" onclick="window.open('resources.html');">Resources</li>
+</ul>
+</div>
+
+<nav>
+<ul id="drugList">
+</ul>
+</nav>
+
+<article id="main">
+	<table style="border-spacing: 2pt;">
+	<form id="druginfo">
+		<tr><td><label><strong style="font-size:16pt">Drug name: </strong></label></td><td><textarea name="name" cols="40" rows="1" onkeydown="if(event.keyCode == 13) submitDrug()" oninput="clearErrors()" style="font-size:16pt"></textarea><span class="error" id="nameerror"></span></td></tr>
+		<tr><td><label><span class="tooltip">Characteristic stem(s)<span class="tooltiptext">Stem lists can be found on the Resources page</span></span>: </label></td><td><textarea name="charstem" cols="50" rows="1"></textarea></td></tr>
+		<tr><td><label>Class: </label></td><td><textarea name="class" cols="50" rows="1"></textarea></td></tr>
+		<tr><td><label>Indications: </label></td><td><textarea name="ind" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label>Mechanism of action: </label></td><td><textarea name="moa" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label>Contraindications: </label></td><td><textarea name="contra" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label>Side effects: </label></td><td><textarea name="se" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label><span class="tooltip">Availability<span class="tooltiptext">E.g. oral bioavailability, first-pass effect, given in active form?</span></span>: </label></td><td><textarea name="avail" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label><span class="tooltip">Elimination<span class="tooltiptext">E.g. renal, hepatic, or a combination?</span></span>: </label></td><td><textarea name="elim" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label><span class="tooltip">Drug-drug interactions<span class="tooltiptext">Of a particular severity or importance; pharmacokinetic or pharmacodynamic?</span></span>: </label></td><td><textarea name="drugint" cols="80" rows="3"></textarea></td></tr>
+		<tr><td><label>Miscellaneous: </label></td><td><textarea name="misc" cols="80" rows="3"></textarea></td></tr>
+	</form>
+		<ul class="bottommenu">
+			<input type="button" onclick="submitDrug();" value="Submit">
+			<input type="button" onclick="clearInfo();" value="Clear">
+			<input type="button" onclick="deleteDrug();" value="Delete">
+		</ul>
+	</table>
+</article>
+
+<script src="js/CASEDcard.js"></script>
+
+</body>
+</html>
