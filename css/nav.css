@@ -1,0 +1,12 @@
+nav {
+	position: fixed;
+	margin-top: 74pt;
+	width: 20%;
+	height: 100%;
+	overflow: auto;
+	background-color: #ceeaff;
+}
+
+article {
+	margin-left: 20%;
+}
