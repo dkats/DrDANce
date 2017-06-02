@@ -12,18 +12,25 @@
 <body>
 <nav>
 <ul>
-	<li>Dance</li>
+	<li onclick="document.getElementById('dance').scrollIntoView();window.scrollBy(0, -48);">Dance</li>
 	<ul>
 		<li>One</li>
 		<li>Two</li>
 		<li>Three</li>
 	</ul>
-	<li>Apps</li>
-	<li style="position:fixed; bottom:28pt">Scroll to top</li>
+	<li onclick="document.getElementById('zumba').scrollIntoView();window.scrollBy(0, -48);">Zumba</li>
+	<li onclick="document.getElementById('apps').scrollIntoView();window.scrollBy(0, -48);">Apps</li>
 </ul>
 </nav>
 
 <article>
+
+<h1 id="dance">Dance</h1>
+
+<h1 id="zumba">Zumba</h1>
+
+<h1 id="apps">Apps</h1>
+
 </article>
 </body>
 </html>
