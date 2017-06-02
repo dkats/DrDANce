@@ -1,12 +1,35 @@
 nav {
 	position: fixed;
-	margin-top: 74pt;
-	width: 20%;
+	margin-top: 34pt;
+	width: 15%;
 	height: 100%;
 	overflow: auto;
 	background-color: #ceeaff;
 }
 
+nav ul{
+	padding: 6pt 0pt;
+}
+
+nav ul li{
+	padding: 4pt 6pt;
+}
+
+nav ul ul{
+	margin-left: 12pt;
+	padding: 0pt;
+}
+
+nav ul ul li{
+	font-weight: normal;
+	padding: 3pt 6pt;
+}
+
+nav ul li:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+
 article {
-	margin-left: 20%;
+	margin-left: 15%;
 }
