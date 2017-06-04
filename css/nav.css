@@ -13,6 +13,7 @@ nav ul{
 
 nav ul li{
 	padding: 4pt 6pt;
+	cursor: pointer;
 }
 
 nav ul ul{

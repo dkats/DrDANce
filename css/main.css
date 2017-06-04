@@ -95,6 +95,10 @@ a {
 	cursor: pointer;
 }
 
+.note {
+	font-weight: bold;
+}
+
 h2 + ul {
 	margin-top: -16px;
 }
