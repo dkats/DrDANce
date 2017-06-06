@@ -195,8 +195,13 @@ ul.menu li.noclick:hover {
 
 article {
 	display: inline-block;
-	margin-top: 48pt;
+	/*margin-top: 48pt;
 	margin-bottom: 28pt;
-	padding: 0px 48px;
+	padding: 0px 48px;*/
+	position: fixed;
+	margin: 0px;
+	padding: 0px 16px;
+	top: 46px;
+	bottom: 32px;
 	overflow: auto;
 }

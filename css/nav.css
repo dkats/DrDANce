@@ -34,10 +34,5 @@ nav ul li:hover {
 }
 
 article {
-	position: fixed;
 	left: 15%;
-	margin: 0px;
-	padding: 0px 16px;
-	top: 46px;
-	bottom: 32px;
 }
