@@ -3,35 +3,61 @@
 <head>
 <title>How much exercise? - Dr. DANce</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/nav.css">
 <meta name="author" content="Daniel J. Kats">
-<script src="js/DrDANce.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="js/customscroll.js"></script>
 </head>
 <body>
+<nav role="navigation" class="ToC">
+<ul>
+	<li onclick="customscroll('short');">Short version</li>
+	<ul>
+		<li onclick="customscroll('short children');">Children</li>
+		<li onclick="customscroll('short adults');">Adults</li>
+		<li onclick="customscroll('short pregnant');">Pregnant</li>
+		<li onclick="customscroll('short old');">Older than 65</li>
+	</ul>
+	<li onclick="customscroll('long');">Long version</li>
+	<ul>
+		<li onclick="customscroll('long children');">Children</li>
+		<li onclick="customscroll('long adults');">Adults</li>
+		<li onclick="customscroll('long pregnant');">Pregnant</li>
+		<li onclick="customscroll('long old');">Older than 65</li>
+		<li onclick="customscroll('who');">WHO recommendations</li>
+	</ul>
+	<li onclick="customscroll('ref');">References</li>
+	<ul>
+		<li onclick="customscroll('ref children');">Children</li>
+		<li onclick="customscroll('ref adults');">Adults</li>
+	</ul>
+</ul>
+</nav>
+
 <article>
 
-<h1>Short version</h1>
+<h1 id="short">Short version</h1>
 
-<h2>Children</h2>
+<h2 id="short children">Children</h2>
 
 <p><em>At least</em> 60&nbsp;minutes or more of physical activity <em>every day</em>. There should be a pretty even mix of moderately intense aerobic, intense aerobic, muscle-strengthening, and bone-strengthening exercise.
 
-<h2>Adults (younger than 65&nbsp;years old and not recently pregnant)</h2>
+<h2 id="short adults">Adults (younger than 65&nbsp;years old and not recently pregnant)</h2>
 
 <p><strong>Some physical activity is better than none, and the more, the better!</strong> Inactive adults should slowly build up their physical activity. When doing aerobic activity, do at least 10&nbsp;minutes at a time to allow your heart to speed up for an extended chunk of time. Aim for <em>at least</em> 30 minutes of exercise five days per week.</p>
 
-<h2>Pregnant (or recently post-partum) women</h2>
+<h2 id="short pregnant">Pregnant (or recently post-partum) women</h2>
 
 <p>During pregnancy, the body goes through many changes (or is recovering from them) and it is necessary to make exercise recommendations on a case-by-case basis. Please speak to your physician about an exercise plan personalized for your body. Your doctor will love to talk about this, and can use this website for exercise ideas.</p>
 
-<h2>Adults over 65&nbsp;years old</h2>
+<h2 id="short old">Adults over 65&nbsp;years old</h2>
 
 <p>Older bodies have long-term wear down of bones and joints, and it is not safe to exercise as much as before. Please speak to your physician about an exercise plan personalized for your body. Your doctor will love to talk about this, and can use this website for exercise ideas.</p>
 
-<h1>Long version</h1>
+<h1 id="long">Long version</h1>
 
-<h2>Children</h2>
+<h2 id="long children">Children</h2>
 
 <p>Children should have <em>at least</em> 60&nbsp;minutes or more of physical activity <em>every day</em>. Any type of activity&mdash;such as recess&mdash;counts towards the 60 minutes of play; it does not have to be structured exercise time. Ideally, try to break up exercise into large, continuous times (if 60&nbsp;minutes straight can't be done, try two 30-minute blocks or four 15-minute blocks).
 <ul>
@@ -67,7 +93,7 @@
 	</ul>
 </ul>
 
-<h2>Adults (younger than 65&nbsp;years old and not recently pregnant)</h2>
+<h2 id="long adults">Adults (younger than 65&nbsp;years old and not recently pregnant)</h2>
 
 <p><strong>Some physical activity is better than none!</strong> Inactive adults should slowly build up their physical activity. When doing aerobic activity, do at least 10&nbsp;minutes at a time to allow your heart to speed up for an extended chunk of time.</p>
 
@@ -89,15 +115,15 @@
 
 <p>For lowering blood pressure and cholesterol, due 40&nbsp;minutes of moderate- or vigorous-intensity aerobic activity three or four days per week.
 
-<h2>Pregnant (or recently post-partum) women</h2>
+<h2 id="long pregnant">Pregnant (or recently post-partum) women</h2>
 
 <p>During pregnancy, the body goes through many changes (or is recovering from them) and it is necessary to make exercise recommendations on a case-by-case basis. Please speak to your physician about an exercise plan personalized for your body. Your doctor will love to talk about this, and can use this website for exercise ideas.</p>
 
-<h2>Adults over 65&nbsp;years old</h2>
+<h2 id="long old">Adults over 65&nbsp;years old</h2>
 
 <p>Older bodies have long-term wear down of bones and joints, and it is not safe to exercise as much as before. Please speak to your physician about an exercise plan personalized for your body. Your doctor will love to talk about this, and can use this website for exercise ideas.</p>
 
-<h2>World Health Organization recommendations</h2>
+<h2 id="who">World Health Organization recommendations</h2>
 <ul>
 	<li><a href="http://www.who.int/dietphysicalactivity/PA_Recommendations_AR.pdf">Arabic</a></li>
 	<li><a href="http://whqlibdoc.who.int/publications/2010/9789245599975_chi.pdf">Chinese</a></li>
@@ -109,9 +135,9 @@
 
 <br><hr>
 
-<h1>References</h1>
+<h1 id="ref">References</h1>
 
-<h2>Children</h2>
+<h2 id="ref children">Children</h2>
 <ul>
 	<li><a href="http://www.acsm.org/docs/default-source/brochures/physical-activity-in-children-and-adolescents.pdf?sfvrsn=4">American College of Sports Medicine</a></li>
 	<li><a href="http://www.heart.org/HEARTORG/HealthyLiving/HealthyKids/ActivitiesforKids/The-AHAs-Recommendations-for-Physical-Activity-in-Children_UCM_304053_Article.jsp">American Heart Association</a></li>
@@ -120,7 +146,7 @@
 	<li><a href="http://www.who.int/dietphysicalactivity/publications/9789241599979/en/">World Health Organization</a></li>
 </ul>
 
-<h2>Adults</h2>
+<h2 id="ref adults">Adults</h2>
 <ul>
 	<li><a href="http://www.heart.org/HEARTORG/HealthyLiving/PhysicalActivity/FitnessBasics/American-Heart-Association-Recommendations-for-Physical-Activity-in-Adults_UCM_307976_Article.jsp">American Heart Association</a></li>
 	<li><a href="https://www.cdc.gov/physicalactivity/basics/adults/">Centers for Disease Control and Prevention</a></li>
