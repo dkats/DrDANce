@@ -176,6 +176,15 @@ ul.menu li.noclick:hover {
 	cursor: default;
 }
 
+.big-list {
+	font-size: 16pt;
+	padding-left: 60px;
+}
+
+.big-list li {
+	margin-bottom: 5px;
+}
+
 .tooltip {
 	position: relative;
 	display: inline-block;
