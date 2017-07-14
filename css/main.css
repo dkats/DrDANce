@@ -240,3 +240,13 @@ article {
 	bottom: 32px;
 	overflow: auto;
 }
+
+div.image {
+	background-image:url(../files/Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 100px;
+	display: inline-block;
+}​
+
