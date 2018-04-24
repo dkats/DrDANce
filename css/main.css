@@ -46,6 +46,11 @@ header {
 	background-color: #000066;
 }
 
+.dropmain.active, .droprest.active {
+	background-color: #e2f3ff;
+	color: #000066;
+}
+
 footer {
 	position: fixed;
 	right: 0;
@@ -176,8 +181,13 @@ ul.menu li.noclick:hover {
 	cursor: default;
 }
 
+ul.menu li.active {
+	background-color: #e2f3ff;
+	color: #000066;
+}
+
 .big-list {
-	font-size: 16pt;
+	font-size: 14pt;
 	padding-left: 60px;
 }
 
