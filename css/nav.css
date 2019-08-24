@@ -2,7 +2,7 @@ nav {
 	position: fixed;
 	top: 46px;
 	bottom: 32px;
-	width: 15%;
+	width: 20%;
 	overflow: scroll;
 	background-color: #ceeaff;
 }
@@ -34,5 +34,5 @@ nav ul li:hover {
 }
 
 article {
-	left: 15%;
+	left: 20%;
 }
